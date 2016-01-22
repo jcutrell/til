@@ -4,8 +4,8 @@ require 'awesome_print'
 require 'dotenv'
 Dotenv.load
 input = "\n- " + ARGV[0]
-
-f = File.open("#{ENV["PATH_TO_README_PARENT"]}readme.md", 'rb')
+file_path = "#{ENV["PATH_TO_README_PARENT"]}readme.md"
+f = File.open(file_path, 'rb')
 d = DateTime.now.strftime("%m/%d/%Y")
 contents = f.read
 if contents.include?(d)
@@ -13,5 +13,5 @@ if contents.include?(d)
 else
   input = contents + "\n" + "## #{d}" + input
 end
-f = File.open("/Users/JonathanCutrell/TIL/readme.md", 'w')
+f = File.open(file_path, 'w')
 f.write(input)
