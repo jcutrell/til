@@ -1,9 +1,11 @@
 #!/usr/bin/env ruby
 require 'date'
 require 'awesome_print'
+require 'dotenv'
+Dotenv.load
 input = "\n- " + ARGV[0]
 
-f = File.open("/Users/JonathanCutrell/TIL/readme.md", 'rb')
+f = File.open("#{ENV["PATH_TO_README_PARENT"]}readme.md", 'rb')
 d = DateTime.now.strftime("%m/%d/%Y")
 contents = f.read
 if contents.include?(d)
