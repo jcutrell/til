@@ -9,7 +9,7 @@ contents = f.read
 if contents.include?(d)
   input = contents + input
 else
-  input = contents + "\n" + d + input
+  input = contents + "\n" + "## #{d}" + input
 end
 f = File.open("/Users/JonathanCutrell/TIL/readme.md", 'w')
 f.write(input)
