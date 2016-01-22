@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'date'
+require 'awesome_print'
+input = "\n- " + ARGV[0]
+
+f = File.open("/Users/JonathanCutrell/TIL/readme.md", 'rb')
+d = DateTime.now.strftime("%m/%d/%Y")
+contents = f.read
+if contents.include?(d)
+  input = contents + input
+else
+  input = contents + "\n" + d + input
+end
+f = File.open("/Users/JonathanCutrell/TIL/readme.md", 'w')
+f.write(input)
