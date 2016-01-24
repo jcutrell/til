@@ -2,9 +2,11 @@
 require 'date'
 require 'awesome_print'
 require 'dotenv'
-Dotenv.load
+path = File.expand_path(File.dirname(__FILE__))
+e = Dotenv.load(path + "/.env")
 input = "\n- " + ARGV[0]
-file_path = "#{ENV["PATH_TO_README_PARENT"]}readme.md"
+ap e["PATH_TO_README_PARENT"]
+file_path = "#{e["PATH_TO_README_PARENT"]}readme.md"
 f = File.open(file_path, 'rb')
 d = DateTime.now.strftime("%m/%d/%Y")
 contents = f.read
