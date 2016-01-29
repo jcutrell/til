@@ -1,0 +1,3 @@
+#!/usr/bin/env /bin/bash
+git commit -am "progress"
+git push origin master
