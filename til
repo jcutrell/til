@@ -13,7 +13,7 @@ contents = f.read
 if contents.include?(d)
   input = contents + input
 else
-  input = contents + "\n" + "## #{d}" + input
+  input = contents + "\n\n" + "## #{d}" + input
 end
 f = File.open(file_path, 'w')
 f.write(input)
