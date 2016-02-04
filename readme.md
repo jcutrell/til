@@ -12,3 +12,7 @@
 - A vector's self dot product is equal to the square of that vector's length
 ## 01/29/2016
 - This quote from Abe Lincoln: 'I don't know who my grandfather was; I am much more concerned to know what his grandson will be.'
+## 02/02/2016
+- How to set up ultisnips for vim, and list all available snippets
+## 02/03/2016
+- CSS filters are actually shortcuts to commonly used SVG filters (which allows for much easier syntax, but less flexibility)
