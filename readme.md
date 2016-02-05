@@ -20,3 +20,7 @@
 
 ## 02/03/2016
 - CSS filters are actually shortcuts to commonly used SVG filters (which allows for much easier syntax, but less flexibility)
+
+
+## 02/05/2016
+- `this` in JavaScript is dependent not on the function itself, but rather on the context of the call-site of that function
