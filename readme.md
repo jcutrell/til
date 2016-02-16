@@ -24,3 +24,7 @@
 
 ## 02/05/2016
 - `this` in JavaScript is dependent not on the function itself, but rather on the context of the call-site of that function
+
+
+## 02/16/2016
+- there's someone with a very highly popular TIL on github: https://github.com/jbranchaud/til
