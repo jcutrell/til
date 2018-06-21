@@ -28,3 +28,5 @@
 
 ## 02/16/2016
 - there's someone with a very highly popular TIL on github: https://github.com/jbranchaud/til
+
+### Note - this TIL was a habit I quite simply did not keep up. I have a much better track record of recording my podcast, [Developer Tea](https://spec.fm/podcasts/developer-tea), so perhaps that's a better place to learn more!
